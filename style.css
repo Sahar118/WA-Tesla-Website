@@ -1,0 +1,286 @@
+/* Fonts */
+@font-face {
+    font-family: gotham-light;
+    src: url(./fonts/GothamSSm-Light_Web.otf);
+  }
+  
+  @font-face {
+    font-family: "gotham-med";
+    src: url(./fonts/GothamSSm-Medium_Web.otf);
+  }
+  
+  @font-face {
+    font-family: gotham-bold;
+    src: url(./fonts/GothamSSm-Bold_Web.otf);
+  }
+  
+  @font-face {
+    font-family: gotham-xlight;
+    src: url(./fonts/GothamSSm-XLight_Web.otf);
+  }
+  
+  @font-face {
+    font-family: gotham-book;
+    src: url(./fonts/GothamSSm-Book_Web.otf);
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:  "gotham-med" ,sans-serif;
+    
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+}
+
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+/* **************************** page 1 ***************************** */
+.page-1 {
+    position: relative;
+    height: 100vh;
+    background: url(./img/Model-3-Main-Hero-Desktop-LHD-p1.jpg) no-repeat center center/cover;
+    color: rgb(255, 255, 255);
+    
+}
+
+.advrtising {
+    font-family:  "gotham-med" ,sans-serif;
+    background-color: #fff;
+    height: 56px;
+    position: sticky;
+    
+    top: 0;
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    
+}
+.advrtising a{
+    text-decoration:underline;
+    color: black;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.top-nav {
+    height: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+svg{
+    width: 120px;
+    height: 24px;
+    padding: 4px 8px;
+    display: block;
+    list-style-type: none;
+    color: #fff;
+    position: fixed;
+    left: 20px;
+}
+
+ul {
+    font-weight: 600px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 4px 8px;
+}
+
+li a,
+li a:visited {
+      font-size: 25px;
+    /* font-size: 14px; */
+    font-family:  "gotham-med",sans-serif;
+
+    padding: 4px 8px;
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+  }
+
+  li:nth-child(1) {
+    margin: auto;
+  }
+  li:nth-child(2) {
+    margin-right: 85px;
+  }
+  li:nth-child(3) {
+    margin-right: 80px;
+  }
+  li:nth-child(4) {
+    margin-right: 70px;
+  }
+  li:nth-child(5) {
+    margin-right: 65px;
+  }
+  li:nth-child(6) {
+    margin-right: 60px;
+  }
+
+  li:nth-child(8) {
+    margin-left: auto;
+  }
+
+.top-title {
+    margin: 10vh auto 0;
+    height: 48;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    outline: 2px;
+    line-height: 48px;
+}
+.top-title h1{
+font-size: 40px;
+}
+
+.top-title a{
+    color: rgb(255, 255, 255);
+    
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration:underline;
+}
+
+
+
+/***************************** aside navbar ***********************/
+.aside-nav{
+    color: rgb(238, 238, 238);
+    font-size: 50px;
+    position: sticky;
+    /* left: 110px; */
+    opacity: 0.2;
+}
+
+
+.aside-nav li.current{
+    /* color: rgb(255, 255, 255); */
+    color: yellowgreen;
+    font-weight: bold ;
+    font-size: 60px;
+    
+
+}
+
+/*********************** bottom box *************************/
+.bottom-box{
+    font-size: 40px;
+    position: relative;
+    bottom: 10vh;
+    left: 40vh;
+    
+    /* padding: 100px;
+    margin: 100px; */
+
+}
+
+.box{
+    float: left; 
+     text-align: center; 
+    display: block;
+    padding: 150px; 
+
+}
+
+.box .bottom{
+    font-size: 20px;
+    
+
+}
+
+/******************** button ********************/
+button{
+    position: relative;
+    bottom: -140px;
+    height: 50px;
+    width: 240px;
+    padding: 4px 24px;
+    margin: 0 0 0 8px;
+    /* float: left; */
+     border-radius: 20px; 
+     border: 4px solid rgb(255, 255, 255); 
+}
+
+
+
+/****************** icon-message *****************/
+.icon-message{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    /* position: relative; */
+    position: fixed;
+
+    right: 70px;
+    
+    float: right;
+}
+
+
+.icon-con{
+    border-radius: 50%;
+    position: fixed;
+    box-sizing: border-box;
+    margin: 20px;
+    height: 60px;
+
+}
+
+
+/* ******************** .scroll  ************************** */
+.scroll {
+    align-items: center;
+    color: #fff;
+
+    font-family: Montserrat, serif;
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+
+}
+
+.scroll .f-page{
+    color: rgb(238, 238, 238);
+}
+
+.scroll__icon {
+    font-size: 40px;
+    animation: down 2s infinite;
+    transform: translateY(-10px);
+}
+ 
+@keyframes down{
+
+    0%{
+        transform: translateY(-10px);
+    }
+
+    20%{
+        transform: translateY(0);
+    }
+}
