@@ -1,3 +1,30 @@
+/* Fonts */
+@font-face {
+    font-family: gotham-light;
+    src: url(./fonts/GothamSSm-Light_Web.otf);
+  }
+  
+  @font-face {
+    font-family: gotham-med;
+    src: url(./fonts/GothamSSm-Medium_Web.otf);
+  }
+  
+  @font-face {
+    font-family: gotham-bold;
+    src: url(./fonts/GothamSSm-Bold_Web.otf);
+  }
+  
+  @font-face {
+    font-family: gotham-xlight;
+    src: url(./fonts/GothamSSm-XLight_Web.otf);
+  }
+  
+  @font-face {
+    font-family: gotham-book;
+    src: url(./fonts/GothamSSm-Book_Web.otf);
+  }
+  
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +32,8 @@
 }
 
 body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: gotham-med,sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 .page-1{
@@ -16,9 +44,7 @@ body{
     margin: auto;
     justify-content: center;
     align-content: center;
-    /* background-color: black; */
-    /* flex-direction: column;
-    align-items: center; */
+
 }
 
 
@@ -56,7 +82,7 @@ svg{
     list-style-type: none;
     align-items: center;
     justify-content: center;
-     transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar ol{
@@ -64,13 +90,13 @@ svg{
     list-style-type: none;
     align-items: center;
     justify-content: center;
-     transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .navbar a{
     color: #fff;
     text-decoration: none;
     padding: 7px 15px;
-     transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar a:hover{
@@ -90,7 +116,7 @@ svg{
     justify-content: center;
     align-content: center;
     color: rgb(57, 60, 65);
-    font-size: 30px;
+    font-size: 20px;
     position: fixed;
     list-style-type: none;
     margin: 2px;
@@ -101,13 +127,16 @@ svg{
 
 .aside-nav li.current{
     color: rgb(255, 255, 255);
-    font-size:35px;
+    font-size:25px;
     left: 20px;
-    width: 40%;
+    width: 20%;
     height: 40%;
 }
 
-
+.aside-nav li:hover{
+    color: #171a20;
+    font-size: 25px;
+}
 
 
 /* <!--------top title---------> */
@@ -121,15 +150,15 @@ svg{
 }
 
 .title-bg1{
-
+    font-family: gotham-med;
     list-style-type: none;
     position: relative;
     color: rgb(57, 60, 65);
     font-size: 20px;
-    line-height: 25px;
-    top:90px;
-    left: 600px;
-    
+    /* line-height: 25px; */
+    top: 90px;
+    right: -410px;
+    font-weight: 400;
 }
 
 h1{
@@ -150,19 +179,24 @@ h1{
     flex-direction: row;
     color: #fff;
     box-sizing: border-box;
-    margin: 450px auto;
+    /* margin: 450px auto; */
+    margin-top: 515px ;
+    
     
 }
 
 .box-bg1 .box-container{
     display: flex;
     flex-direction: row;
-    width: 764px;
+    width: 700px;
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
+    position: relative;
+    bottom: 80px;
+    right: 80px;
 
     }
 
@@ -201,16 +235,73 @@ h1{
         background-color: #fff;
     }
 
+
+        .box-bg1 .box-container .box-top{
+            display: flex;
+            flex-direction: row;
+            padding: 10px 0px;
+            padding-bottom: 1px;
+        }
+    
+        .box-bg1 .box-container .box-bottom{
+            padding-top: 0;
+            text-align: center;
+        }
+        .box-bg1 .box-container h1{
+            font-size: 28px;
+        }
+        
+        .spedo-p{
+            position: relative;
+            right: 25px;
+    
+    }   
+    .speedometer {
+        position: relative;
+        display: block;
+        left:-55px;
+        bottom: -14px
+    }
+    
+    .speedometer-outer-circle {
+        position: absolute;
+        left: 8px;
+        top: 0;
+        width: 40px;
+        height: 21px;
+    }
+    
+    .speedometer-inner-circle {
+        position: absolute;
+        left: 6.5px;
+        top: 2.6px;
+        width: 30px;
+        height: 15px;
+        opacity: 0.45;
+    }
+    
+    .speedometer-needle {
+        position: absolute;
+        left: 32px;
+        top: 12px;
+        width: 4px;
+        height: 16px;
+        rotate: 90deg;
+    }
+    
+    .spedo-h1{
+        position: relative;
+        right: -20px;
+    }
 /****************** icon-message *****************/
 .icon-message{
     background-color: #fff;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-
+    width: 60px;
+    height: 60px;
     position: fixed;
-    right: 100px;
-    bottom: 20px;
+    right: 28px;
+    top: 462px;
     float: right;
     box-shadow: 1px 1px 5px 5px  rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -220,10 +311,10 @@ h1{
 .icon-con{
     border-radius: 50%;
     position: absolute;
-
     box-sizing: border-box;
-    margin: 5px auto auto 5px;
-    height: 40px;
+    margin: 15px auto auto 15px;
+    height: 32px;
+    
 }
 
 
@@ -351,6 +442,7 @@ left: 0px;
     background: url(./img/1828919.png) no-repeat center center/cover;
     height: 100%;
     width: 100%;
+
 }
 
 .learn-more{
@@ -397,8 +489,7 @@ left: 0px;
 .page-3-top-half{
     background: url(./img/Model-3-Performance-Hero-Desktop-LHD-bg3.jpg) no-repeat center center/cover;
     height: 80vh;
-    /* display: flex;
-    flex-direction: row; */
+
     justify-content: space-between;
     overflow: hidden;
     margin: auto;
@@ -450,11 +541,25 @@ left: 0px;
         padding: 8px 0 0;
     }
 
+    .box-top-p3{
+        /* background-color: yellowgreen; */
+        /* padding-left: 40px; */
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        position: relative;
+        left: 80px;
+    }
+
+
+    .speedometer .spedo-p3{
+        position: relative;
+    }
 
     /* <!-- ************************************ page 3 bottom  ************************************--> */
 
     
-section .page-3-bottom{
+    section .page-3-bottom{
         height: 60vh;
         display: flex;
         flex-direction: row;
@@ -466,37 +571,40 @@ section .page-3-bottom{
 
 
 
-   .page-3-bottom .p3-left-side .buttons-bg2 .buy-now-bg2 .p3{
+.page-3-bottom .p3-left-side .buttons-bg2 .buy-now-bg2 .p3{
     position:absolute;
-    left: 100px;
+    /* left: 100px; */
     height: 156px;
     width: 378px;
 }
 
 section .p3-left-side{
     float: left;
-    height: 200px;
+    height: 165px;
     width: 550px;
     padding: 40px 10px 20px 180px;
 }
 
 section .p3-right-side{
     float: right;
-    padding: 40px 190px 20px 10px;
+    height: 165px;
+    width: 550px;
     font-size: 14px;
+    font-weight: 400;
     color: #171a20;
-
+    padding-right: 20px;
+    position: relative;
+    top: 48px;
+    right: 130px;
 }
 
 section .p3-right-side a{
     color: #171a20;
-   
 }
 
 .p3-left-top{
     height: 24.03px;
     width: 314.08px;
-
 }
 .p3-left-side .p3-left-top .Performance{
     font-size: 17px;
@@ -505,7 +613,7 @@ section .p3-right-side a{
 }
 
 .p3-left-side .p3-left-top h1{
-    font-size: 28px;
+    font-size: 27px;
     color: #171a20;
 }
 
@@ -513,4 +621,7 @@ section .p3-right-side a{
     width: 100%;
 
 }
+
+
+
 
